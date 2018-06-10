@@ -4,7 +4,7 @@ FUNCTION_HANDLER = lamda_handler
 LAMBDA_ROLE = arn:aws:iam:991675433:role/service-role/lambda-basic-role
 PROJECT_ZIP_NAME = package
 
-lambda_create:
+lambda_function_create:
   aws lambda create-function \
   --region $(AWS_REGION) \
   --function-name $(FUNCTION_NAME) \
