@@ -5,7 +5,7 @@ sudo docker build -t my_aws_image .
 
 #create a docker container 
 
-sudo docker run -it --net=host --name=my_aws_container -v           /Users/user_name/my_project/src/lambda_package:/zipped_lambda_package my_aws_image /bin/bash
+sudo docker run -it --net=host --name=my_aws_container -v /my_project/src/lambda_package:/zipped_lambda_package my_aws_image /bin/bash
 
 # zipped all source code with dependency to be deployed to aws lambda
 
